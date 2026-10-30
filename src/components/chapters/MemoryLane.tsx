@@ -22,7 +22,7 @@ export function MemoryLane({
         <h2 className="font-display mt-2 text-4xl text-rose-deep">Our story</h2>
         <p className="mt-2 text-sm text-ink/70">A few frames from the movie of us.</p>
 
-        <div className="mt-6 flex-1 space-y-8 overflow-y-auto pb-4 pr-1">
+        <div className="mt-6 flex-1 space-y-8 pb-4">
           {content.timeline.map((item, i) => {
             const photo =
               item.photoIndex !== undefined ? content.photos[item.photoIndex] : undefined;

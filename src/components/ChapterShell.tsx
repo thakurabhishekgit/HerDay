@@ -15,7 +15,7 @@ export function ChapterShell({
 }) {
   return (
     <motion.section
-      className={`relative min-h-[100dvh] w-full overflow-hidden ${
+      className={`relative min-h-[100dvh] w-full overflow-x-hidden ${
         night ? "night-sky text-cream" : "love-gradient text-ink"
       } film-grain ${className}`}
       initial={{ opacity: 0, filter: "blur(8px)", y: 24 }}

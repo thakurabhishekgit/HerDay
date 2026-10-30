@@ -25,7 +25,7 @@ export function Gallery({
         <h2 className="font-display mt-2 text-4xl text-rose-deep">Our gallery</h2>
         <p className="mt-2 text-sm text-ink/70">Ten frames. Infinite soft feelings.</p>
 
-        <div className="mt-6 grid flex-1 grid-cols-2 gap-4 overflow-y-auto pb-6 sm:gap-5">
+        <div className="mt-6 grid flex-1 grid-cols-2 gap-4 pb-6 sm:gap-5">
           {content.photos.map((photo, i) => (
             <div key={i} className="flex justify-center">
               <Polaroid

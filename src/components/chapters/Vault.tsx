@@ -42,7 +42,7 @@ export function Vault({ onNext, onBack }: { onNext: () => void; onBack: () => vo
           ))}
         </div>
 
-        <div className="mt-8 flex justify-center gap-4 overflow-x-auto pb-2">
+        <div className="mt-8 grid grid-cols-2 justify-items-center gap-4 sm:grid-cols-3">
           {[0, 1, 2].map((i) => (
             <Polaroid
               key={i}

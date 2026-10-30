@@ -31,9 +31,9 @@ export type TimelineItem = {
 
 export const content = {
   // ─── NAMES (replace placeholders) ───────────────────────
-  herName: "HER_NAME",
-  yourName: "YOUR_NAME",
-  birthdayDate: "2026-10-30",
+  herName: "Sharanya",
+  yourName: "Abhishek",
+  birthdayDate: "2026-10-31",
 
   heroTitle: "Happy Birthday, my love",
   heroSubtitle:
@@ -53,52 +53,53 @@ export const content = {
   // ─── ~10 PHOTOS FROM GOOGLE DRIVE ───────────────────────
   photos: [
     {
-      driveFileId: "",
+      driveFileId:
+        "https://drive.google.com/file/d/1vBD8oxOCdO5jt99JEthHcXv6JZKmN8Jy/view?usp=sharing",
       caption: "PHOTO_1_CAPTION — the first soft smile",
       alt: "Memory 1",
     },
     {
-      driveFileId: "",
+      driveFileId: "https://drive.google.com/file/d/15nnpFAJ3yHgGgpQRfGrwl_3XkKZ6YTEZ/view?usp=sharing",
       caption: "PHOTO_2_CAPTION — us, mid-laugh",
       alt: "Memory 2",
     },
     {
-      driveFileId: "",
+      driveFileId: "https://drive.google.com/file/d/1vKdCKHGQtmJjyOnG_94FKLPjfTi3-EmG/view?usp=sharing",
       caption: "PHOTO_3_CAPTION — golden hour",
       alt: "Memory 3",
     },
     {
-      driveFileId: "",
+      driveFileId: "https://drive.google.com/file/d/1ih0aR7HTx-6phJqDI8K0AGvpldVaEFil/view?usp=sharing",
       caption: "PHOTO_4_CAPTION — your eyes did that thing",
       alt: "Memory 4",
     },
     {
-      driveFileId: "",
+      driveFileId: "https://drive.google.com/file/d/1OTs0eSuggFBwELOTY1uuvNKFNAP7Nvbv/view?usp=sharing",
       caption: "PHOTO_5_CAPTION — chaos, but ours",
       alt: "Memory 5",
     },
     {
-      driveFileId: "",
+      driveFileId: "https://drive.google.com/file/d/1u5yeBVSQKQrpl0FRnbqr0h6-XyY8CAkr/view?usp=sharing",
       caption: "PHOTO_6_CAPTION — quiet & enough",
       alt: "Memory 6",
     },
     {
-      driveFileId: "",
+      driveFileId: "https://drive.google.com/file/d/1wNhGkrHQJS6f8kXlaKiiv8NsjeCF7IDW/view?usp=sharing",
       caption: "PHOTO_7_CAPTION — favorite accidental photo",
       alt: "Memory 7",
     },
     {
-      driveFileId: "",
+      driveFileId: "https://drive.google.com/file/d/1RJOKKiXf76foTF8uQVQrNwWq7NlwPMDG/view?usp=sharing",
       caption: "PHOTO_8_CAPTION — proof I stared too long",
       alt: "Memory 8",
     },
     {
-      driveFileId: "",
+      driveFileId: "https://drive.google.com/file/d/1s98k4VVMwgcHNn1IB-UJ3mYNWDmFupI0/view?usp=sharing",
       caption: "PHOTO_9_CAPTION — soft launch forever",
       alt: "Memory 9",
     },
     {
-      driveFileId: "",
+      driveFileId: "https://drive.google.com/file/d/1um2WFN3yslSZEVyRJMZVJaLqnKaw8cjI/view?usp=sharing",
       caption: "PHOTO_10_CAPTION — still choosing you",
       alt: "Memory 10",
     },

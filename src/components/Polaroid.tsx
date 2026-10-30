@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { driveImageUrl } from "@/lib/drive";
 
-const tilts = [-6, -3, 2, 5, -4, 3, -2, 4, -5, 1];
+const tilts = [-3, -2, 2, 3, -2, 2, -1, 2, -3, 1];
 
 export function Polaroid({
   driveFileId,
@@ -27,7 +27,7 @@ export function Polaroid({
 
   const inner = (
     <motion.figure
-      className="polaroid w-[11.5rem] sm:w-[13rem] cursor-pointer"
+      className="polaroid w-[10.5rem] sm:w-[12rem] cursor-pointer"
       style={{ rotate }}
       whileHover={{ y: -8, rotate: 0, scale: 1.03 }}
       whileTap={{ scale: 0.98 }}

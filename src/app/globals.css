@@ -28,11 +28,20 @@
 
 * {
   box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge legacy */
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none; /* Chrome/Safari/Edge */
 }
 
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -40,7 +49,6 @@ body {
   color: var(--ink);
   background: var(--cream);
   font-family: var(--font-body), Georgia, serif;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 

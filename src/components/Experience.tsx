@@ -40,7 +40,7 @@ export function Experience() {
     lightbox !== null ? driveImageUrl(content.photos[lightbox]?.driveFileId) : null;
 
   return (
-    <main className="relative min-h-[100dvh] bg-cream">
+    <main className="relative min-h-[100dvh] overflow-x-hidden bg-cream">
       <MusicToggle src={content.musicSrc} unlocked={unlocked} />
 
       <AnimatePresence mode="wait">
