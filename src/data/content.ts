@@ -48,17 +48,17 @@ export const content = {
     {
       driveFileId:
         "https://drive.google.com/file/d/1vBD8oxOCdO5jt99JEthHcXv6JZKmN8Jy/view?usp=sharing",
-      caption: "PHOTO_1_CAPTION — the first soft smile",
-      alt: "Memory 1",
+      caption: "my cutie cupcake — Our First Date we realised it lately",
+      alt: "Our First Date we realised it lately",
     },
     {
       driveFileId: "https://drive.google.com/file/d/15nnpFAJ3yHgGgpQRfGrwl_3XkKZ6YTEZ/view?usp=sharing",
-      caption: "PHOTO_2_CAPTION — us, mid-laugh",
+      caption: "The Day when we felt we are FUCKING LOVERS",
       alt: "Memory 2",
     },
     {
       driveFileId: "https://drive.google.com/file/d/1vKdCKHGQtmJjyOnG_94FKLPjfTi3-EmG/view?usp=sharing",
-      caption: "PHOTO_3_CAPTION — golden hour",
+      caption: "The moment we felt we don't care are we took depe breath and just HUG Eachother",
       alt: "Memory 3",
     },
     {
@@ -68,32 +68,32 @@ export const content = {
     },
     {
       driveFileId: "https://drive.google.com/file/d/1OTs0eSuggFBwELOTY1uuvNKFNAP7Nvbv/view?usp=sharing",
-      caption: "PHOTO_5_CAPTION — chaos, but ours",
+      caption: "when foir the first time meko shmje aaya what's NIHAARNA",
       alt: "Memory 5",
     },
     {
       driveFileId: "https://drive.google.com/file/d/1u5yeBVSQKQrpl0FRnbqr0h6-XyY8CAkr/view?usp=sharing",
-      caption: "PHOTO_6_CAPTION — quiet & enough",
+      caption: "I still remember kaise sharma rahi thi tu",
       alt: "Memory 6",
     },
     {
       driveFileId: "https://drive.google.com/file/d/1wNhGkrHQJS6f8kXlaKiiv8NsjeCF7IDW/view?usp=sharing",
-      caption: "PHOTO_7_CAPTION — favorite accidental photo",
+      caption: "UNIVERSE MADE US DO THIS (CAM KI MKC FR)",
       alt: "Memory 7",
     },
     {
       driveFileId: "https://drive.google.com/file/d/1RJOKKiXf76foTF8uQVQrNwWq7NlwPMDG/view?usp=sharing",
-      caption: "PHOTO_8_CAPTION — proof I stared too long",
+      caption: "BEST MOMENT OF OUR LIFE FIRST KISS AND WE ACTUALLY CAPTURED IT",
       alt: "Memory 8",
     },
     {
       driveFileId: "https://drive.google.com/file/d/1s98k4VVMwgcHNn1IB-UJ3mYNWDmFupI0/view?usp=sharing",
-      caption: "PHOTO_9_CAPTION — soft launch forever",
+      caption: "PINTREST TO REALITY MOMENT",
       alt: "Memory 9",
     },
     {
       driveFileId: "https://drive.google.com/file/d/1um2WFN3yslSZEVyRJMZVJaLqnKaw8cjI/view?usp=sharing",
-      caption: "PHOTO_10_CAPTION — still choosing you",
+      caption: "The way you look at me when i hit a shot (U DA REAL SHOT)",
       alt: "Memory 10",
     },
   ] satisfies PhotoItem[],
@@ -138,25 +138,28 @@ export const content = {
   ] satisfies TimelineItem[],
 
   reasons: [
-    "The way your smile rearranges my whole day",
-    "How safe it feels to be completely myself with you",
-    "Your tiny habits I pretend not to notice (I notice all of them)",
-    "The softness you keep even on hard days",
-    "How you make ordinary Tuesday nights feel like a movie",
+    "KYUKI TU ITEM HAI HEHEHEHEHHE",
+    "I FELT THAT SPARK THE MOMENT I SAW YOU FOR 1ST TIME",
+    "I STILL CAN'T HOLD EYE CONTACT WITH YOU THOSE EYES ARE AHHHH",
+    "THE WAY TO BOUGHT ME BACK FROM MY PAST",
+    "How you make ordinary Tuesday at newmark nights feel like a movie",
     "Your laugh — my favorite sound in any room",
-    "The way you care, quietly and completely",
-    "Every inside joke that only we understand",
-    "How you look at me like I'm already enough",
-    "Choosing you again, on purpose, every morning",
+    "NIGGA HOW CAN I KEEP 10 REASONS WHEN I HAVE TONS OF REASON TO LOVE YOU",
+    "KYUKI TU CHATPATI HAI",
+    "COZ YOUR DAD IS DIRECTOR OF COGNIZANT (YE PAD KE HAM DONO HASENGE)",
+    "MAIN REASON WE BOTH FREAKY AHH COUPLE",
   ],
 
-  loveLetter: `My dearest HER_NAME,
+  loveLetter: `My dearest SHARANYA , NAPILLA,
 
 Happy birthday to the girl who somehow became my favorite place.
 
-I built you this little website because a text felt too small for everything you are. These photos, these words, these silly cats — they're just proof that loving you spills out of me in the most extra ways.
+I built you this little website because a text felt too small for everything you are. These photos, these words, these silly cats — they're just proof that loving you spills
+out of me in the most extra ways. 
 
-Thank you for the soft mornings, the chaotic evenings, the quiet in-betweens. Thank you for being you — stubbornly kind, impossibly lovely, endlessly mine to admire.
+IDK still everything looks like dream and we are in a very FUCKING GOOD FLOW ki even we dont know , this energy is not normal FR hamara kuch to connectio tha pahele se 
+
+Thank you for the soft mornings (I EXPECT GOOFY LOVE BOMBING WHICH YOU DO), the chaotic evenings(AT NEWMARK POOL CAFE MY DESK OMG UN REPETABLE MOMENTS), the quiet in-betweens (AFTER WE KISS OR DO SOME FREAK AND WE SAY BANEEEEEE). Thank you for being you — stubbornly kind (WHEN MEETINGS), impossibly lovely, endlessly mine to admire.
 
 I hope this year wraps you in softness. I hope you feel chosen. I hope you know that wherever we go next, my heart already packed its bags for you.
 
@@ -170,11 +173,11 @@ Abhishek  💕`,
   futureCards: [
     {
       title: "Next adventures",
-      text: "New cities, late trains, and snacks we pretend are dinner.",
+      text: "New ways to meet, late nights, and snacks we pretend are dinner.",
     },
     {
       title: "Places we'll go",
-      text: "Wherever your laugh leads — I'll follow with the camera.",
+      text: "anyplace with you dosen't matter its the best (bas kiss karne miljaye)",
     },
     {
       title: "Promises",
@@ -200,19 +203,19 @@ Abhishek  💕`,
       driveFileId: "https://drive.google.com/file/d/1pTfeYPmX1lGNBudl9N5QGqY99o6ADjb-/view?usp=sharing",
     },
     {
-      quote: "emotionally attached to her laugh",
+      quote: "me everytime i see her ",
       driveFileId: "https://drive.google.com/file/d/1j4QVBWXrbDUQg9Sk73vZOZg_oxQOo2cP/view?usp=sharing",
     },
     {
-      quote: "sir this is a Wendy's… and also my heart",
+      quote: "maa girllll",
       driveFileId: "https://drive.google.com/file/d/1h6k-25UJv9flTSfpq36mWqDQumfYSgpg/view?usp=sharing",
     },
     {
-      quote: "soft launch? nah. hard commit.",
+      quote: "US EVERYTIME WE MEET",
       driveFileId: "https://drive.google.com/file/d/1JoVhY_o0KxggQfx7FBdE5NIG1wpPtiBt/view?usp=sharing",
     },
     {
-      quote: "currently buffering feelings",
+      quote: "EXACETLY",
       driveFileId: "https://drive.google.com/file/d/1m96qiCl7xjG-5gVl57QnKId68-Fu8FOv/view?usp=sharing",
     },
     {
@@ -220,7 +223,7 @@ Abhishek  💕`,
       driveFileId: "https://drive.google.com/file/d/1lRtPzaGLNhlUTiR6voW-FFyn3943k-eC/view?usp=sharing",
     },
     {
-      quote: "do not disturb: staring at her",
+      quote: "IM GONNA WORK ON THIS PROJECT",
       driveFileId: "https://drive.google.com/file/d/1jUSaEBcUFDrXanfUAp8hO9K3MX9hTd9n/view?usp=sharing",
     },
   ],
