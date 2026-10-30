@@ -10,10 +10,20 @@ export function Hero({ onNext, onBack }: { onNext: () => void; onBack: () => voi
     <ChapterShell>
       <div className="relative flex flex-1 flex-col justify-center">
         <div className="absolute -left-1 top-8">
-          <MemeCat pose="peek" quote={content.catQuotes[0]} side="left" />
+          <MemeCat
+            pose="peek"
+            quote={content.catMemes[0].quote}
+            driveFileId={content.catMemes[0].driveFileId}
+            side="left"
+          />
         </div>
         <div className="absolute -right-1 bottom-28">
-          <MemeCat pose="cheer" quote={content.catQuotes[1]} side="right" />
+          <MemeCat
+            pose="cheer"
+            quote={content.catMemes[1].quote}
+            driveFileId={content.catMemes[1].driveFileId}
+            side="right"
+          />
         </div>
 
         <motion.p

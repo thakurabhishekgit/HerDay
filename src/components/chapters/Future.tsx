@@ -3,11 +3,28 @@
 import { motion } from "framer-motion";
 import { content } from "@/data/content";
 import { ChapterShell, NavRow } from "../ChapterShell";
+import { MemeCat } from "../MemeCat";
 
 export function Future({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
   return (
     <ChapterShell>
-      <div className="flex flex-1 flex-col">
+      <div className="relative flex flex-1 flex-col">
+        <div className="absolute -left-1 top-4 z-10">
+          <MemeCat
+            pose="peek"
+            quote={content.catMemes[1].quote}
+            driveFileId={content.catMemes[1].driveFileId}
+            side="left"
+          />
+        </div>
+        <div className="absolute -right-1 bottom-28 z-10">
+          <MemeCat
+            pose="cheer"
+            quote={content.catMemes[2].quote}
+            driveFileId={content.catMemes[2].driveFileId}
+            side="right"
+          />
+        </div>
         <p className="text-xs uppercase tracking-[0.28em] text-rose/70">Chapter 07</p>
         <h2 className="font-display mt-2 text-4xl text-rose-deep">Future with you</h2>
         <p className="mt-2 text-sm text-ink/70">Soft promises, already in motion.</p>
@@ -40,7 +57,7 @@ export function Future({ onNext, onBack }: { onNext: () => void; onBack: () => v
           Forever starts every morning with you.
         </p>
 
-        <NavRow onBack={onBack} onNext={onNext} nextLabel="Our photo vault →" />
+        <NavRow onBack={onBack} onNext={onNext} nextLabel="One last thing →" />
       </div>
     </ChapterShell>
   );

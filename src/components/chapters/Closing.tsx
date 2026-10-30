@@ -15,7 +15,11 @@ export function Closing({ onReplay }: { onReplay: () => void }) {
   return (
     <ChapterShell night>
       <div className="flex flex-1 flex-col items-center justify-center text-center">
-        <MemeCat pose="wave" quote="bye for now… forever continues" />
+        <MemeCat
+          pose="wave"
+          quote="bye for now… forever continues"
+          driveFileId={content.catMemes[4].driveFileId}
+        />
 
         <motion.h2
           className="font-display mt-8 text-4xl leading-tight text-cream sm:text-5xl"

@@ -16,7 +16,15 @@ export function Cake({ onNext, onBack }: { onNext: () => void; onBack: () => voi
 
   return (
     <ChapterShell>
-      <div className="flex flex-1 flex-col">
+      <div className="relative flex flex-1 flex-col">
+        <div className="absolute -right-1 top-2 z-10">
+          <MemeCat
+            pose="peek"
+            quote={content.catMemes[0].quote}
+            driveFileId={content.catMemes[0].driveFileId}
+            side="right"
+          />
+        </div>
         <p className="text-xs uppercase tracking-[0.28em] text-rose/70">Chapter 06</p>
         <h2 className="font-display mt-2 text-4xl text-rose-deep">Make a wish</h2>
         <p className="mt-2 text-sm text-ink/70">{content.cakeWishText}</p>
@@ -78,7 +86,11 @@ export function Cake({ onNext, onBack }: { onNext: () => void; onBack: () => voi
             </button>
           ) : (
             <div className="mt-10 text-center">
-              <MemeCat pose="cheer" quote="wish unlocked ✨" />
+              <MemeCat
+                pose="cheer"
+                quote="wish unlocked ✨"
+                driveFileId={content.catMemes[3].driveFileId}
+              />
               <p className="font-hand mt-4 text-xl text-rose-deep">Wish received. Heart noted.</p>
             </div>
           )}

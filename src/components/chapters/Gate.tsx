@@ -4,11 +4,28 @@ import { motion } from "framer-motion";
 import { content } from "@/data/content";
 import { celebrationBurst } from "@/lib/confetti";
 import { ChapterShell } from "../ChapterShell";
+import { MemeCat } from "../MemeCat";
 
 export function Gate({ onOpen }: { onOpen: () => void }) {
   return (
     <ChapterShell night>
-      <div className="flex flex-1 flex-col items-center justify-center text-center">
+      <div className="relative flex flex-1 flex-col items-center justify-center text-center">
+        <div className="absolute left-0 top-6">
+          <MemeCat
+            pose="peek"
+            quote={content.catMemes[0].quote}
+            driveFileId={content.catMemes[0].driveFileId}
+            side="left"
+          />
+        </div>
+        <div className="absolute bottom-10 right-0">
+          <MemeCat
+            pose="wave"
+            quote={content.catMemes[1].quote}
+            driveFileId={content.catMemes[1].driveFileId}
+            side="right"
+          />
+        </div>
         <motion.p
           className="mb-6 text-xs uppercase tracking-[0.35em] text-cream/70"
           initial={{ opacity: 0 }}

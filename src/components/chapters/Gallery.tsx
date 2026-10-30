@@ -3,8 +3,8 @@
 import { content } from "@/data/content";
 import { driveFolderUrl } from "@/lib/drive";
 import { ChapterShell, NavRow } from "../ChapterShell";
+import { MemeCat } from "../MemeCat";
 import { Polaroid } from "../Polaroid";
-import { WalkingCat } from "../MemeCat";
 
 export function Gallery({
   onNext,
@@ -19,8 +19,23 @@ export function Gallery({
 
   return (
     <ChapterShell>
-      <WalkingCat quote={content.catQuotes[2]} />
-      <div className="flex flex-1 flex-col">
+      <div className="relative flex flex-1 flex-col">
+        <div className="absolute -left-1 top-2 z-10">
+          <MemeCat
+            pose="peek"
+            quote={content.catMemes[4].quote}
+            driveFileId={content.catMemes[4].driveFileId}
+            side="left"
+          />
+        </div>
+        <div className="absolute -right-1 bottom-28 z-10">
+          <MemeCat
+            pose="cheer"
+            quote={content.catMemes[5].quote}
+            driveFileId={content.catMemes[5].driveFileId}
+            side="right"
+          />
+        </div>
         <p className="text-xs uppercase tracking-[0.28em] text-rose/70">Chapter 03</p>
         <h2 className="font-display mt-2 text-4xl text-rose-deep">Our gallery</h2>
         <p className="mt-2 text-sm text-ink/70">Ten frames. Infinite soft feelings.</p>

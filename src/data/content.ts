@@ -39,16 +39,9 @@ export const content = {
   heroSubtitle:
     "A little corner of the internet that exists only because you do.",
 
-  // ─── GOOGLE DRIVE ALBUM (folder link) ───────────────────
+  // ─── GOOGLE DRIVE ALBUM (folder link — used by empty photo slots) ───
   googleDriveAlbumUrl:
     "https://drive.google.com/drive/folders/GOOGLE_DRIVE_FOLDER_URL",
-
-  driveFolders: [
-    { title: "Our Dates", hint: "Coffee, walks, late nights" },
-    { title: "Silly Moments", hint: "Unhinged & perfect" },
-    { title: "Trips", hint: "Wherever we wandered" },
-    { title: "Birthday 2026", hint: "Leave a new memory here" },
-  ],
 
   // ─── ~10 PHOTOS FROM GOOGLE DRIVE ───────────────────────
   photos: [
@@ -193,19 +186,47 @@ Abhishek  💕`,
     },
   ],
 
-  catQuotes: [
-    "me when you smile",
-    "brain cells: 0 / love: 100",
-    "emotionally attached to her laugh",
-    "sir this is a Wendy's… and also my heart",
-    "soft launch? nah. hard commit.",
-    "currently buffering feelings",
-    "certified girlfriend enjoyer",
-    "do not disturb: staring at her",
+  /**
+   * Cute meme cats — paste Drive FILE links in driveFileId (same as photos).
+   * Quote stays as the speech bubble; photo replaces the ASCII face.
+   */
+  catMemes: [
+    {
+      quote: "me when you smile",
+      driveFileId: "https://drive.google.com/file/d/1PnUS2vPBs15FOR0J1aFJwA7ZtFC_sB0c/view?usp=sharing",
+    },
+    {
+      quote: "brain cells: 0 / love: 100",
+      driveFileId: "https://drive.google.com/file/d/1pTfeYPmX1lGNBudl9N5QGqY99o6ADjb-/view?usp=sharing",
+    },
+    {
+      quote: "emotionally attached to her laugh",
+      driveFileId: "https://drive.google.com/file/d/1j4QVBWXrbDUQg9Sk73vZOZg_oxQOo2cP/view?usp=sharing",
+    },
+    {
+      quote: "sir this is a Wendy's… and also my heart",
+      driveFileId: "https://drive.google.com/file/d/1h6k-25UJv9flTSfpq36mWqDQumfYSgpg/view?usp=sharing",
+    },
+    {
+      quote: "soft launch? nah. hard commit.",
+      driveFileId: "https://drive.google.com/file/d/1JoVhY_o0KxggQfx7FBdE5NIG1wpPtiBt/view?usp=sharing",
+    },
+    {
+      quote: "currently buffering feelings",
+      driveFileId: "https://drive.google.com/file/d/1m96qiCl7xjG-5gVl57QnKId68-Fu8FOv/view?usp=sharing",
+    },
+    {
+      quote: "certified girlfriend enjoyer",
+      driveFileId: "https://drive.google.com/file/d/1lRtPzaGLNhlUTiR6voW-FFyn3943k-eC/view?usp=sharing",
+    },
+    {
+      quote: "do not disturb: staring at her",
+      driveFileId: "https://drive.google.com/file/d/1jUSaEBcUFDrXanfUAp8hO9K3MX9hTd9n/view?usp=sharing",
+    },
   ],
 
-  /** Optional: drop an mp3 at /public/music/soft-love.mp3 */
-  musicSrc: "/music/soft-love.mp3",
+  /** Optional: drop an mp3 at /public/music/soft-love.mp3 then set this path */
+  musicSrc: "",
 
   closingLine: "I love you more than yesterday",
 } as const;

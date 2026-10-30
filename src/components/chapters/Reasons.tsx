@@ -10,26 +10,31 @@ import { MemeCat } from "../MemeCat";
 export function Reasons({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
   const [i, setI] = useState(0);
   const reason = content.reasons[i];
-  const showCat = i % 3 === 1;
 
   return (
     <ChapterShell>
-      <div className="flex flex-1 flex-col">
+      <div className="relative flex flex-1 flex-col">
+        <div className="absolute -left-1 top-8 z-10">
+          <MemeCat
+            pose="peek"
+            quote={content.catMemes[3].quote}
+            driveFileId={content.catMemes[3].driveFileId}
+            side="left"
+          />
+        </div>
+        <div className="absolute -right-1 bottom-28 z-10">
+          <MemeCat
+            pose="cheer"
+            quote={content.catMemes[i % content.catMemes.length].quote}
+            driveFileId={content.catMemes[i % content.catMemes.length].driveFileId}
+            side="right"
+          />
+        </div>
         <p className="text-xs uppercase tracking-[0.28em] text-rose/70">Chapter 04</p>
         <h2 className="font-display mt-2 text-4xl text-rose-deep">Reasons I love you</h2>
         <p className="mt-2 text-sm text-ink/70">Swipe through my soft evidence.</p>
 
         <div className="relative mt-10 flex flex-1 flex-col items-center justify-center">
-          {showCat && (
-            <div className="absolute -top-2 right-0 z-10">
-              <MemeCat
-                pose="cheer"
-                quote={content.catQuotes[i % content.catQuotes.length]}
-                side="right"
-              />
-            </div>
-          )}
-
           <div className="relative w-full max-w-sm">
             <AnimatePresence mode="wait">
               <motion.div

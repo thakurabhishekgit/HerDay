@@ -15,10 +15,10 @@ import { Reasons } from "./chapters/Reasons";
 import { LoveLetter } from "./chapters/LoveLetter";
 import { Cake } from "./chapters/Cake";
 import { Future } from "./chapters/Future";
-import { Vault } from "./chapters/Vault";
 import { Closing } from "./chapters/Closing";
 
-const TOTAL = 9; // 0 gate … 8 closing (hero starts after gate opens)
+/** 0 gate → 1–7 chapters → 8 closing */
+const LAST = 8;
 
 export function Experience() {
   const [chapter, setChapter] = useState(0);
@@ -26,7 +26,7 @@ export function Experience() {
   const [lightbox, setLightbox] = useState<number | null>(null);
 
   const go = useCallback((n: number) => setChapter(n), []);
-  const next = useCallback(() => setChapter((c) => Math.min(TOTAL, c + 1)), []);
+  const next = useCallback(() => setChapter((c) => Math.min(LAST, c + 1)), []);
   const back = useCallback(() => setChapter((c) => Math.max(0, c - 1)), []);
 
   const openPhoto = (index: number) => {
@@ -64,8 +64,7 @@ export function Experience() {
         {chapter === 5 && <LoveLetter key="letter" onNext={next} onBack={back} />}
         {chapter === 6 && <Cake key="cake" onNext={next} onBack={back} />}
         {chapter === 7 && <Future key="future" onNext={next} onBack={back} />}
-        {chapter === 8 && <Vault key="vault" onNext={next} onBack={back} />}
-        {chapter === 9 && (
+        {chapter === 8 && (
           <Closing
             key="closing"
             onReplay={() => {
@@ -76,9 +75,9 @@ export function Experience() {
         )}
       </AnimatePresence>
 
-      {chapter > 0 && chapter < 9 && (
+      {chapter > 0 && chapter < LAST && (
         <div className="pointer-events-none fixed left-1/2 top-4 z-50 -translate-x-1/2 rounded-full bg-white/70 px-3 py-1 text-[10px] tracking-[0.2em] text-rose-deep/70 backdrop-blur">
-          {chapter} / 8
+          {chapter} / 7
         </div>
       )}
 

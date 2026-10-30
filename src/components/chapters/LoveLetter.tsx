@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { content } from "@/data/content";
 import { burstHearts, softPetalRain } from "@/lib/confetti";
 import { ChapterShell, NavRow } from "../ChapterShell";
+import { MemeCat } from "../MemeCat";
 
 export function LoveLetter({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
   const [opened, setOpened] = useState(false);
@@ -30,7 +31,23 @@ export function LoveLetter({ onNext, onBack }: { onNext: () => void; onBack: () 
 
   return (
     <ChapterShell>
-      <div className="flex flex-1 flex-col">
+      <div className="relative flex flex-1 flex-col">
+        <div className="absolute -left-1 top-8 z-10">
+          <MemeCat
+            pose="peek"
+            quote={content.catMemes[6].quote}
+            driveFileId={content.catMemes[6].driveFileId}
+            side="left"
+          />
+        </div>
+        <div className="absolute -right-1 bottom-32 z-10">
+          <MemeCat
+            pose="sleep"
+            quote={content.catMemes[7].quote}
+            driveFileId={content.catMemes[7].driveFileId}
+            side="right"
+          />
+        </div>
         <p className="text-xs uppercase tracking-[0.28em] text-rose/70">Chapter 05</p>
         <h2 className="font-display mt-2 text-4xl text-rose-deep">A letter for you</h2>
         <p className="mt-2 text-sm text-ink/70">Words I meant with my whole chest.</p>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { content } from "@/data/content";
 import { driveFolderUrl } from "@/lib/drive";
 import { ChapterShell, NavRow } from "../ChapterShell";
+import { MemeCat } from "../MemeCat";
 import { Polaroid } from "../Polaroid";
 
 export function MemoryLane({
@@ -17,7 +18,23 @@ export function MemoryLane({
 }) {
   return (
     <ChapterShell>
-      <div className="flex flex-1 flex-col">
+      <div className="relative flex flex-1 flex-col">
+        <div className="absolute -right-1 top-0 z-10">
+          <MemeCat
+            pose="peek"
+            quote={content.catMemes[2].quote}
+            driveFileId={content.catMemes[2].driveFileId}
+            side="right"
+          />
+        </div>
+        <div className="absolute bottom-24 left-0 z-10">
+          <MemeCat
+            pose="sleep"
+            quote={content.catMemes[3].quote}
+            driveFileId={content.catMemes[3].driveFileId}
+            side="left"
+          />
+        </div>
         <p className="text-xs uppercase tracking-[0.28em] text-rose/70">Chapter 02</p>
         <h2 className="font-display mt-2 text-4xl text-rose-deep">Our story</h2>
         <p className="mt-2 text-sm text-ink/70">A few frames from the movie of us.</p>
