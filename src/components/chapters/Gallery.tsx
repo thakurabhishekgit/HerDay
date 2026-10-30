@@ -38,15 +38,6 @@ export function Gallery({
               />
             </div>
           ))}
-          <div className="col-span-2 flex justify-center pt-2">
-            <Polaroid
-              caption="More memories coming…"
-              alt="Add memory"
-              index={11}
-              emptyHref={album}
-              emptyLabel="Leave a photo in Drive"
-            />
-          </div>
         </div>
 
         <NavRow onBack={onBack} onNext={onNext} nextLabel="Reasons I love you →" />
